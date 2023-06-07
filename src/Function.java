@@ -1,36 +1,4 @@
 
-class Student{
-    String firstname;
-    String lastname;
-    int age;
-    String address;
-    int b=9;
-
-
-
-
-
-    void printInfo(int b) {
-        b = 8;
-
-        System.out.println(this.firstname);
-        System.out.println(this.lastname);
-        System.out.println(this.age);
-        System.out.println(this.address);
-        System.out.println(this.b);
-    }
-    Student(String firstname,String lastname,int age ){
-        this(firstname,age);
-
-    }
-    Student(){
-
-
-    }
-    Student( String firstname,int age){
-        this.firstname=firstname;
-this .age=21;
-    }
 
 
 
@@ -43,7 +11,6 @@ this .age=21;
 
 
 
-}
 
 
 
@@ -51,18 +18,25 @@ this .age=21;
 
 
 
+
+
+
+
+
+
+
+import java.util.*;
 public class Function {
 
 
     public static void main(String[] args) {
-        Student sam=new Student ();
-        Student peter=new Student( "peter",21);
-        Student harry =new Student( "harry","potter",34);
+        Student s1=new Student("sam","parker",23,0012);
+        Student s2=new Student("tom","parker",21,0098);
+
+        System.out.println(s1.getFirstname());
 
 
-
-        harry.printInfo(8);
-
+        System.out.println(s1.getFirstname());
 
 
 
@@ -82,4 +56,5 @@ public class Function {
 
 
     }
+
 }
